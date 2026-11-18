@@ -1,0 +1,29 @@
+name: Idee vorschlagen / Suggest an improvement
+description: Eine Idee für Wurzelplan. An idea to improve Wurzelplan.
+title: "[Idee] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Deutsch und Englisch sind willkommen. Bitte beschreibe zuerst, was du im Gartenalltag erreichen möchtest.
+        This suggestion is public. Please explain the problem you would like to solve and avoid private information.
+  - type: textarea
+    id: need
+    attributes:
+      label: Was möchtest du erreichen? / What would you like to achieve?
+      description: Welches Problem oder welcher Ablauf steckt dahinter? What problem or workflow is behind your suggestion?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Deine Idee / Your suggestion
+      description: Wie könnte Wurzelplan dabei helfen? How could Wurzelplan help?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Bisheriger Weg oder Alternativen / Current workaround or alternatives
+      description: Optional.
