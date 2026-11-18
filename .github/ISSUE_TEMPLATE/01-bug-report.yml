@@ -1,0 +1,59 @@
+name: Fehler melden / Report a bug
+description: Etwas funktioniert nicht wie erwartet. Something is not working as expected.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Melden! Deutsch und Englisch sind willkommen.
+        This report is public. Please do not include credentials, payment details, private information or full garden backups. Private support: oddseedsoftware@gmail.com.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Was passiert? / What happens?
+      description: Beschreibe das Problem. Describe the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Nachstellen / Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Erwartetes Verhalten / Expected behaviour
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App-Version und Build / App version and build
+      description: Einstellungen → Über Wurzelplan / Settings → About Wurzelplan. Falls unbekannt, bitte so angeben. If unknown, say so.
+      placeholder: "0.1.0 / Build 2"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Gerät und Android-Version / Device and Android version
+      placeholder: "Samsung Galaxy S24, Android ..."
+  - type: dropdown
+    id: appearance
+    attributes:
+      label: Darstellung / Appearance
+      options:
+        - Garten / Garden
+        - Schlicht / Plain
+        - Unbekannt / Unknown
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshot oder weitere Hinweise / Screenshot or other details
+      description: Optional. Persönliche Inhalte vorher entfernen. Please remove private information first.
