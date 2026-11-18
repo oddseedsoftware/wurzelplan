@@ -1,0 +1,26 @@
+name: Frage stellen / Ask a question
+description: Eine Frage zur Nutzung von Wurzelplan. A question about using Wurzelplan.
+title: "[Frage] "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Deutsch und Englisch sind willkommen. Fragen und Antworten hier sind öffentlich.
+        For private questions, purchase details or security reports, email oddseedsoftware@gmail.com. Do not post sensitive information here.
+  - type: textarea
+    id: question
+    attributes:
+      label: Deine Frage / Your question
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App-Version / App version
+      description: Falls relevant. If relevant.
+  - type: textarea
+    id: tried
+    attributes:
+      label: Was hast du schon versucht? / What have you tried?
+      description: Optional.
